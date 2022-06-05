@@ -3,4 +3,7 @@
     <string name="enter_email">Enter Email</string>
     <string name="password_required">Password is required</string>
     <string name="email_required">Email is required</string>
+    <string name="firstName_required">First Name is required</string>
+    <string name="lastName_required">Enter Last Name</string>
+    <string name="confirmPassword_required">Confirm Password</string>
 </resources>
