@@ -6,4 +6,7 @@
     <string name="firstName_required">First Name is required</string>
     <string name="lastName_required">Enter Last Name</string>
     <string name="confirmPassword_required">Confirm Password</string>
+    <string name="plan">Plan</string>
+    <string name="track">Track</string>
+    <string name="profile">Profile</string>
 </resources>
