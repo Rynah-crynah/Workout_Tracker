@@ -1,14 +1,14 @@
-package com.example.workout_log
+package com.example.workout_log.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import com.example.workout_log.databinding.ActivityHomeBinding
+import com.example.workout_log.Api_Client
+import com.example.workout_log.Api_Interface
+import com.example.workout_log.R
 import com.example.workout_log.databinding.ActivityLoginBinding
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
+import com.example.workout_log.models.Login_Request
+import retrofit2.Response
 
 class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
@@ -21,8 +21,6 @@ class LoginActivity : AppCompatActivity() {
 
        binding.btnLogin.setOnClickListener {
             validae_Login()
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
         }
 
         binding.tvSignup.setOnClickListener {
@@ -47,9 +45,24 @@ class LoginActivity : AppCompatActivity() {
 
         }
         if (!error) {
+//            var loginRequest = Login_Requestuest(email, password)
+
+        }
+
+//        fun makeLoginRequest(loginRequest: LoginRequest){
+//            var apiClient = Api_Client.buildApiClient(Api_Interface::class.java)
+//            val request = apiClient.login(loginRequest)
+//
+//            request.enqueue(object :callback<Login_Response> {
+//                override fun onResponse(call: Call<Login_Response>, response: Response>)
+//                if(response.isSuccessful){
+//
+//
+//                }
+//            }
 
         }
     }
 
 
-}
+//}

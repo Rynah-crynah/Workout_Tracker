@@ -1,12 +1,9 @@
-package com.example.workout_log
+package com.example.workout_log.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentContainerView
+import com.example.workout_log.R
 import com.example.workout_log.databinding.ActivityHomeBinding
-import com.example.workout_log.databinding.ActivityLoginBinding
-import com.example.workout_log.databinding.ActivitySignupBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
